@@ -75,6 +75,28 @@
 
     <!-- Premium sans: system-first (fast). Swap for Neue Haas Grotesk / Söhne / GT America if licensed. -->
     <style>
+        .skipLink {
+            position: absolute;
+            top: -60px;
+            left: 16px;
+            z-index: 9999;
+            background: #F5F5F5;
+            color: #0A0A0A;
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 0.04em;
+            padding: 12px 20px;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: top .2s ease;
+        }
+
+        .skipLink:focus {
+            top: 16px;
+            outline: 2px solid #0A0A0A;
+            outline-offset: 2px;
+        }
+
         :root {
             --bg: #060608;
             --fg: #F5F5F5;
@@ -7235,6 +7257,8 @@ body::before {
 </head>
 
 <body>
+    <a class="skipLink" href="#top">Skip to content</a>
+
     <!-- Full-Page Cinematic Background & Editorial Grid System -->
     <div class="cinematicCanvas" aria-hidden="true">
         <!-- Deep Ambient Lighting & Grounding Vignette -->
@@ -7376,6 +7400,10 @@ body::before {
                         <div class="ctaRow reveal" style="transition-delay:.2s">
                             <a class="btn" href="#projects">
                                 VIEW MY WORK <span class="arrow" aria-hidden="true">→</span>
+                            </a>
+                            <a class="btn" href="assets/files/Bipin-Sanjeeva-Resume.pdf" download
+                                style="background:transparent; color:var(--fg); border:1px solid var(--border)">
+                                DOWNLOAD RESUME <span class="arrow" aria-hidden="true">↓</span>
                             </a>
                             <div class="kicker" style="margin:0; color:var(--ink-faint)">Available for projects
                             </div>
@@ -7728,6 +7756,10 @@ body::before {
                         <div class="linkRow">
                             <div class="k">WHATSAPP</div>
                             <a href="https://wa.me/919019334686" target="_blank" rel="noopener noreferrer">+91 90193 34686</a>
+                        </div>
+                        <div class="linkRow">
+                            <div class="k">RESUME</div>
+                            <a href="assets/files/Bipin-Sanjeeva-Resume.pdf" download>Download PDF</a>
                         </div>
                     </div>
 
